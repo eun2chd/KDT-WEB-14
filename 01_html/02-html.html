@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 상대경로 : 현재파일의 위치 기준 -->
+    <img src="/img/dog.webp" width="300px" height="200px" alt="dog" />
+    <!-- 절대경로 :  -->
+
+    <!-- 라이브 서버의 절대경로 -->
+    <img src="/01_html/dog.jpeg" alt="dog Live" />
+
+    <!-- a태그 -->
+
+    <br />
+    <a href="https://www.naver.com/">네이버</a>
+    <a href="https://www.naver.com/" target="_blank">네이버(blank)</a>
+    <a href="https://www.naver.com/" target="_self">네이버(self)</a>
+
+    <!-- form 태그 : 입력 form 을 감싸고 있는 태그 -->
+
+    <form action="">
+      <input type="button" value="버튼" />
+      <input type="text" placeholder="text" />
+      <input type="password" placeholder="password" />
+      <!-- checkbox 여러개 선택 가능
+        name : 체크박스들을 묶어준다.(식별값)
+        value : 실제로 체크박스 값을 가져올 때 나오는 값
+      -->
+      <input type="checkbox" name="frults" value="apple" checked />사과
+      <input type="checkbox" name="frults" value="banana" />바나나
+      <!-- radio : 하나만 선택 가능 
+       name,value : checkbox 기능 동일 
+      
+      -->
+      <input type="radio" name="gender" value="man" checked />남자
+      <input type="radio" name="gender" value="woman" />여자
+      <!-- 년 원 일 -->
+      <input type="date" />
+      <!-- 년 월 일 시간 -->
+      <input type="datetime-local" />
+      <!-- select -->
+      <select>
+        <optgroup label="커피">
+          <option value="americano">아메리카노</option>
+          <option value="caffeLatte" selected>카페라떼</option>
+          <option value="espresso">에스프레소</option>
+        </optgroup>
+        <optgroup label="티">
+          <option value="earlgray">얼그레이티</option>
+          <option value="jesmin">자스민티</option>
+        </optgroup>
+      </select>
+    </form>
+
+    <!-- table -->
+    <!-- colspan : 해당 칸이 점유하는 행의 수 지정 -->
+    <!-- rowspan : 해당 칸이 점유하는 열의 수 지정 -->
+
+
+
+
+  <table border="1" cellspacing = 0 cellpadding = 5 width = "300" height = "100">
+    <tr>
+      <th>이름</th>
+      <th>나이</th>
+      <th>전화번호</th>
+    </tr>
+    <tr>
+      <td>성은총</td>
+      <td>29</td>
+      <td>010-5430-8165</td>
+    </tr>
+    <tr>
+      <td rowspan="2">홍길동</td>
+      <td colspan="2">100</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>010-1111-1111</td>
+    </tr>
+  </table>
+
+  <hr>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+
+  <table border="1" cellspacing = 0 cellpadding = 5 width = "300" height = 200>
+    <tr>
+      <td colspan="3">1</td>
+      <td rowspan="2">2</td>
+    </tr>
+    <tr>
+      <td rowspan="3">3</td>
+      <td>center</td>
+    </tr>
+    <tr>
+      <td colspan="4">4</td>
+    </tr>
+  </table>
+  </body>
+</html>
