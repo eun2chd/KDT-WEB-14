@@ -1,0 +1,28 @@
+/* 조건1 : 야생의 사자만 선택 */
+div ~ p {
+  background-color: red;
+}
+/* 조건2 사파리 안에 사자만 선택 */
+ul>.lion {
+  background-color: greenyellow;
+}
+/* 조건3 호랑이만 선택 */
+#tiger {
+  background-color: yellow;
+}
+/* 조건4 사자 전체 선택 후 글자색 sienna 색 */
+.lion{
+  color:sienna;
+}
+/* 조건5 동물원 안에 사자만 선택 후 글자 두껍게 */
+ul>.lion{
+  font-weight: 800;
+}
+/* 조건6 호랑이 뒤에 팬더 선택 */
+#tiger+li {
+  background-color: skyblue;
+}
+/* 조건7 사파리 사자뒤에 사육사 선택  */
+li.lion ~ li {
+  background-color: orange;
+}

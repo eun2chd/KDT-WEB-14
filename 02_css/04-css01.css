@@ -1,0 +1,38 @@
+/* 기본 선택자 /  */
+/* 태그 선택자 : 태그 이름 사용 */
+
+li {
+  color : red;  
+}
+
+/* 클래스를 선택자 . 클래스이름 */
+
+.orange {
+  color: orange;
+
+}
+/* class, 0 , */
+/* 아이디 선택자 
+*/ 아이디 이름
+#blue {
+  color:blue
+}
+
+/* 복합 선택자 */
+/* 일치선택자 : 선택 선택자  */
+sapn.orange {
+  background-color: yellow;
+}
+
+/* 자식선택자 */
+ul > .orange  {
+  background-color: red;
+}
+
+div.orange {
+  text-decoration: line-through;
+}
+
+.orange + li {
+  color : gold;
+}
