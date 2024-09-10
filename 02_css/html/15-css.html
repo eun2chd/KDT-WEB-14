@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+  <style>
+
+    /* box-sizing */
+    .container {
+      /* box2를 나란히 두기위해 사용 */
+      display: flex;
+    
+    }
+
+    .box2 {
+      width: 200px;
+      height: 100px;
+      padding:20px;
+      border : 1px solid #000;
+      background-color: lightblue;
+    }
+    .content-box {
+      box-sizing: content-box;
+    }
+    .border-box {
+      box-sizing: border-box;
+    }
+
+  </style>
+
+<body>
+<!-- div로 이루어진 box가 똑같은 크기로 있을떄 지정을 따로 해주지 않으면 기본적으로 content-box로 지정된다
+ 
+content-box : 지정한 요소 크기의 바깥쪽으로 border,padding 덧붙이기
+ - 콘텐츠의 유연성 : 지정된 크기에 따라 동적으로 조정되며, 디자인의 유연성이 높음
+ - 디자인 제어 : 패딩, 테두리를 분리하여 디자인 요소를 더 정교하게 제어 가능
+ 단점 : 레아이웃 복잡성 : 다 각각 계산해야 하므로 시간과 노력이 소요됨
+    계산 오류 가능성
+
+border-box : 지정한 요소 크기의 안쪽으로 obrder, padding 덧붙이기
+  장점 - 예측가능성 : 총 너비와 높이가 예측하기 쉽다.
+    - 유지보수, 간편한 계산
+  단점 : 내용 공간 감소 : 실제 콘텐츠 영역이 작아짐
+
+
+-->
+  <div class="container">
+    <div class="box2 content-box"></div>
+    <div class="box2 border-box"></div>
+  </div>
+
+
+  
+</body>
+</html>

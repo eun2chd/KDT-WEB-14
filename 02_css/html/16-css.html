@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+  <style>
+
+    /* box-sizing */
+    .container {
+      /* box2를 나란히 두기위해 사용 */
+      display: flex;
+    
+    }
+
+    .box2 {
+      width: 100px;
+      height: 100px;
+      padding:20px;
+      border : 15px solid red;
+      background-color: orange;
+    }
+    .content-box {
+      box-sizing: content-box;
+    }
+    .border-box {
+      box-sizing: border-box;
+    }
+
+    /* visibilty */
+    .square {
+      width: 100px;
+      height: 100px;
+      border : 1px solid;
+      display: inline-block;
+    }
+
+    .d-none {
+      display: none;
+      background-color: red;
+    }
+
+    .invisible {
+      visibility: hidden;
+      background-color: orange;
+    }
+
+    .opacity-0 {
+      opacity: 0;
+      background-color: tomato;
+    }
+    .opacity-0:hover{
+      opacity: 1;
+    }
+
+    .scroll {
+      overflow: scroll;
+    }
+    .auto {
+      overflow: auto;
+    }
+
+  </style>
+
+<body>
+  <div class="container">
+    <div class="box2 content-box"></div>
+    <div class="box2 border-box"></div>
+  </div>
+
+  <!-- visblity -->
+  <h4>visblity</h4>
+    <div class="square">orginal</div>
+    <div class="square d-none">d-none</div>
+    <div class="square invisible">invisible</div>
+    <div class="square opacity-0">opactiy-0</div>
+    <div class="square">original</div>
+
+    <!-- overflow -->
+     <h4>overflow</h4>
+     <div class="square scroll">
+    lor</div>
+
+     <div class="square auto">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, officia quis commodi labore voluptatum quas. Soluta maiores, officiis dignissimos eos molestiae possimus dicta deleniti aliquam dolores cupiditate quisquam sed minus.
+     
+     </div>
+  
+
+
+
+</body>
+</html>

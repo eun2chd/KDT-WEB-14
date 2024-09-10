@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+  <style>
+    div {
+      border : 1px solid #000;
+      width: 200px;
+      height: 200px;
+      padding : 5px;
+      margin : 20px;
+      display: inline-block;
+    }
+
+    #divbox {
+      border-top: dotted;
+      border-right: dashed;
+      border-left: groove;
+      border-bottom:outset ;
+    }
+
+    #divone {
+      border-radius : 10px 30px 20px 40px;
+    }
+
+    /* box-sizing */
+    .container {
+      /* box2를 나란히 두기위해 사용 */
+      display: flex;
+    
+    }
+
+    .box2 {
+      width: 200px;
+      height: 100px;
+      padding:20px;
+      border : 1px solid #000;
+      background-color: lightblue;
+    }
+    .content-box {
+      box-sizing: content-box;
+    }
+    .border-box {
+      box-sizing: border-box;
+    }
+
+  </style>
+
+<body>
+  <div style="border-width: 2rem;"></div>
+  <div style="border-style: dashed;"></div>
+  <div style="border-color : red"></div>
+  <div id = "divbox"></div>
+
+  <div id = divone></div>
+
+  <div class="container">
+    <div class="box2 content-box"></div>
+    <div class="box2 border-box"></div>
+  </div>
+
+
+  
+</body>
+</html>
