@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/02_css/css/back01.css">
+  <title>background</title>
+</head>
+<body>
+    <style>
+      div {
+        width: 300px;
+        height: 200px;
+        margin-bottom: 30px;
+      }
+
+      .grad-1 {
+        background: linear-gradient(grey,tomato);
+      }
+
+      .grad-2 {
+        background: linear-gradient(90deg,grey,tomato);
+        background: linear-gradient(to right,grey,tomato);
+      }
+
+      .grad-3 {
+        background: linear-gradient(90deg, grey,75%, tomato);
+      }
+      .grad-4 {
+        background: linear-gradient(green,gray,tomato);
+      }
+
+      /* background-image */
+      .background-image {
+        background-color: orange;
+        background-image: url('https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a');
+        width: 500px;
+        height: 500px;
+        /* background-repeat */
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* x축 y축 */
+        background-position: 10px 10px;
+        /* 숫자 하나만 입력하면 x 축에 대해서만 적용한다. */
+        /* background-position: 300px; */
+
+        /* background-size */
+        /* cover : 더 넓은 값에 맞춤, contain : 더 짧은 값에 맞춘다. */
+        /* default */
+        background-size: auto;
+        background-size: 100px;
+        background-size: 100px 50px;
+        background-size: cover;
+        background-size: contain;
+
+      }
+
+      .scroll {
+        width: 500px;
+        height: 500px;
+        background-image: url('https://item.kakaocdn.net/do/d84248170c2c52303db27306a00fb861f604e7b0e6900f9ac53a43965300eb9a');
+        overflow: scroll;
+        /* background-attachment : 요소의 배경 이미지 스크롤 특성 */
+        background-attachment: scroll; /*default*/
+        background-repeat: no-repeat;
+
+      }
+ 
+
+    </style>
+
+
+    <div class="grad-1"></div>
+    <div class="grad-2"></div>
+    <div class="grad-3"></div>
+    <div class="grad-4"></div>
+
+    <hr>
+
+
+    <div class = "background-image"></div>
+    <div class="scroll">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, odio eveniet quidem velit possimus incidunt a soluta laboriosam explicabo ea, iure facilis, maxime aliquid asperiores error voluptas ipsum natus quas.
+      Sequi placeat, earum recusandae sapiente quidem a neque aliquam veniam. Eveniet voluptatum fugit dignissimos nesciunt rerum sed assumenda explicabo sapiente labore. Minus quos veniam dolore velit omnis! Impedit, nihil ex.
+      Voluptatem blanditiis sunt aperiam! Nemo repudiandae laborum veniam eaque, quos repellat temporibus laudantium, assumenda ipsam exercitationem officiis. Optio expedita ipsa suscipit adipisci odio numquam quasi sed saepe praesentium! Dicta, inventore.
+      Exercitationem placeat dolore tempore ipsum! Eveniet deserunt necessitatibus porro animi pariatur at cumque sunt perspiciatis exercitationem optio excepturi consectetur error, quis iusto tempora maxime amet voluptas consequatur vitae, autem modi.
+      Porro praesentium placeat eligendi nesciunt, incidunt autem non sapiente ipsam hic totam suscipit similique architecto saepe iure. Porro tempore quisquam voluptas alias, debitis magnam dolorem deleniti culpa repellendus sequi unde?
+
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, odio eveniet quidem velit possimus incidunt a soluta laboriosam explicabo ea, iure facilis, maxime aliquid asperiores error voluptas ipsum natus quas.
+      Sequi placeat, earum recusandae sapiente quidem a neque aliquam veniam. Eveniet voluptatum fugit dignissimos nesciunt rerum sed assumenda explicabo sapiente labore. Minus quos veniam dolore velit omnis! Impedit, nihil ex.
+      Voluptatem blanditiis sunt aperiam! Nemo repudiandae laborum veniam eaque, quos repellat temporibus laudantium, assumenda ipsam exercitationem officiis. Optio expedita ipsa suscipit adipisci odio numquam quasi sed saepe praesentium! Dicta, inventore.
+      Exercitationem placeat dolore tempore ipsum! Eveniet deserunt necessitatibus porro animi pariatur at cumque sunt perspiciatis exercitationem optio excepturi consectetur error, quis iusto tempora maxime amet voluptas consequatur vitae, autem modi.
+      Porro praesentium placeat eligendi nesciunt, incidunt autem non sapiente ipsam hic totam suscipit similique architecto saepe iure. Porro tempore quisquam voluptas alias, debitis magnam dolorem deleniti culpa repellendus sequi unde?
+
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, odio eveniet quidem velit possimus incidunt a soluta laboriosam explicabo ea, iure facilis, maxime aliquid asperiores error voluptas ipsum natus quas.
+      Sequi placeat, earum recusandae sapiente quidem a neque aliquam veniam. Eveniet voluptatum fugit dignissimos nesciunt rerum sed assumenda explicabo sapiente labore. Minus quos veniam dolore velit omnis! Impedit, nihil ex.
+      Voluptatem blanditiis sunt aperiam! Nemo repudiandae laborum veniam eaque, quos repellat temporibus laudantium, assumenda ipsam exercitationem officiis. Optio expedita ipsa suscipit adipisci odio numquam quasi sed saepe praesentium! Dicta, inventore.
+      Exercitationem placeat dolore tempore ipsum! Eveniet deserunt necessitatibus porro animi pariatur at cumque sunt perspiciatis exercitationem optio excepturi consectetur error, quis iusto tempora maxime amet voluptas consequatur vitae, autem modi.
+      Porro praesentium placeat eligendi nesciunt, incidunt autem non sapiente ipsam hic totam suscipit similique architecto saepe iure. Porro tempore quisquam voluptas alias, debitis magnam dolorem deleniti culpa repellendus sequi unde?
+
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, odio eveniet quidem velit possimus incidunt a soluta laboriosam explicabo ea, iure facilis, maxime aliquid asperiores error voluptas ipsum natus quas.
+      Sequi placeat, earum recusandae sapiente quidem a neque aliquam veniam. Eveniet voluptatum fugit dignissimos nesciunt rerum sed assumenda explicabo sapiente labore. Minus quos veniam dolore velit omnis! Impedit, nihil ex.
+      Voluptatem blanditiis sunt aperiam! Nemo repudiandae laborum veniam eaque, quos repellat temporibus laudantium, assumenda ipsam exercitationem officiis. Optio expedita ipsa suscipit adipisci odio numquam quasi sed saepe praesentium! Dicta, inventore.
+      Exercitationem placeat dolore tempore ipsum! Eveniet deserunt necessitatibus porro animi pariatur at cumque sunt perspiciatis exercitationem optio excepturi consectetur error, quis iusto tempora maxime amet voluptas consequatur vitae, autem modi.
+      Porro praesentium placeat eligendi nesciunt, incidunt autem non sapiente ipsam hic totam suscipit similique architecto saepe iure. Porro tempore quisquam voluptas alias, debitis magnam dolorem deleniti culpa repellendus sequi unde?
+
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, odio eveniet quidem velit possimus incidunt a soluta laboriosam explicabo ea, iure facilis, maxime aliquid asperiores error voluptas ipsum natus quas.
+      Sequi placeat, earum recusandae sapiente quidem a neque aliquam veniam. Eveniet voluptatum fugit dignissimos nesciunt rerum sed assumenda explicabo sapiente labore. Minus quos veniam dolore velit omnis! Impedit, nihil ex.
+      Voluptatem blanditiis sunt aperiam! Nemo repudiandae laborum veniam eaque, quos repellat temporibus laudantium, assumenda ipsam exercitationem officiis. Optio expedita ipsa suscipit adipisci odio numquam quasi sed saepe praesentium! Dicta, inventore.
+      Exercitationem placeat dolore tempore ipsum! Eveniet deserunt necessitatibus porro animi pariatur at cumque sunt perspiciatis exercitationem optio excepturi consectetur error, quis iusto tempora maxime amet voluptas consequatur vitae, autem modi.
+      Porro praesentium placeat eligendi nesciunt, incidunt autem non sapiente ipsam hic totam suscipit similique architecto saepe iure. Porro tempore quisquam voluptas alias, debitis magnam dolorem deleniti culpa repellendus sequi unde?
+
+    </div>
+
+
+
+</body>
+</html>

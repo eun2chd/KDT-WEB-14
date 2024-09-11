@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    div div {
+      width: 100px;
+      height: 100px;
+      border : 1px solid #000;
+    }
+
+    .display-flex {
+      display: flex;
+      width: 400px;
+      height: 300px;
+      background-color: green;
+
+      /* direction */
+      flex-direction: row;
+
+      /* flex wrap */
+      flex-wrap : wrap
+    }
+
+    /* justify-content : 주 축의 정렬 방법 
+      - flex-start : default
+      - flex-end, center, space-between, space-around, space-evenly
+    */
+    /* align-items : 교차 축의 한 줄 정렬 방법
+      - stretch : default
+      - flex-start, flex-end, center, baseline, space-around,space.evenly
+    */
+       /* align-items : 교차 축의 여러 줄 정렬 방법
+      - flex-wrap : wrap 되어있어야 작동
+      - stretch : default
+      - flex-start, flex-end, center,space-between, space-around, space-evenly
+    */
+    
+
+
+
+  </style>
+
+
+  <div class="display-flex">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+  </div>
+</body>
+</html>

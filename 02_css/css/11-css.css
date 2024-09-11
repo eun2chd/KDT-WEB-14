@@ -4,14 +4,12 @@
   height: 500px;
   border : 1px solid #000;
 }
-
 .cir {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   border: 1px solid #000;
 }
-
 .cir1 {
   position: relative;
   font-weight: 900;
@@ -32,7 +30,6 @@
   background-color: #558126;
   z-index: 0;
 }
-
 .cir3 {
   font-weight: 900;
   text-align: center;
