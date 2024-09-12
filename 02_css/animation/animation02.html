@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <style>
+      div {
+        width: 100px;
+      height: 100px;
+      background-color: aqua;
+      position: relative;
+      border-radius: 50%;
+      /* animation: name duration timing-function(생략o) delay(생략o) delay iteration-count direction(o) fill-mode; */
+      animation-name : ps;
+      animation-duration: 3s;
+      animation-iteration-count: 6;
+      animation-timing-function: infinite; /* 숫자 지정 or 무한반복(infinite)*/
+      animation-delay:1s;
+      }
+
+      @keyframes ps {
+      0% {
+        left : 0px;
+        top : 0px;
+      }
+      25% {
+        left : 1400px;
+        top : 0;
+      }
+      50% {
+        top : 550px;
+        left : 1400px;
+      }
+      75% {
+        top : 550px;
+        left: 0px;
+      }
+      100% {
+        left : 0px;
+        top : 0px;
+      }
+    }
+  </style>
+
+
+<body>
+  <div class = "cic"></div>
+ </body>
+</html>
