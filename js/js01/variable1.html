@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>변수</title>
+  <script>
+    // 변수 선언 & 할당
+    // var 키보드 :
+    // 중복 선언 재할당 모두 가능
+    // 할당 x - > undefined
+
+    let fus = ["oragne","pin","apple","banana"];
+
+
+    console.log(fus[0],fus[1],fus[2]);
+
+    let grade = 3; // 전역변수
+
+    // 매개변수가 있는 경우(파라미터,인자)
+    function hello(name,grade) {
+      let age = 10; // 지역변수
+      console.log("hello 함수 안에서 age :", age);
+      console.log('함수 안 grade : ', grade); // 매개변수로 선언한 값이 출력
+
+     //  let name = "안녕"; error : 매개변수에서 사용한 이름 
+      return age;
+    }
+    hello('길동');
+    // console.log(age);
+    let age = hello("길동",5);
+    console.log(age);
+    console.log(grade);
+    console.log('함수 밖 grade :', grade);
+
+  // const 중복선언x 재할당x
+  // - 처음 선언 시 초기화 필수!(선언과 할당을 동시에)
+  </script>
+</head>
+<body>
+  
+
+
+</body>
+</html>

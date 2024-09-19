@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/837ff3adc1.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      :root {
+        /* : root -> html 요소를 의미, <html> 태그 선택보다 우선순위가 높다.
+          전역변수를 만들 때 많이 사용
+        */
+        --nav-height-lg: 100px;
+        --nav-height-sm: 60px;
+      }
+      body {
+        margin: 0;
+        /* 헤더가 fixed (고정) 확인하기 위해서 */
+        height: 2000px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      /* HEADER */
+      /* 변수 사용시 var() */
+      header {
+        width: 100%;
+        height: var(--nav-height-lg);
+        z-index: 100;
+        /* 헤더 고정 & logo 기준은 header 로 됨 */
+        position: fixed;
+      }
+
+      /* 768px 보다 클때의 header */
+      header .inner {
+        background-color: lightblue;
+        height: 100%;
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* LOGO */
+      header .inner .logo {
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        left: 150px;
+      }
+
+      header .inner .menu {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+      header .inner .menu li {
+        margin:0 10px;
+        font-weight: 900;
+        cursor: pointer;
+      }
+      /* 미디어 쿼리 작성 768px 이하일 때  */
+
+      /* x값 보다 클때 */
+      @media (min-width : 768px) {
+    }
+
+      /* 가로 해상도가 768px 값보다 작은 화면에 적용한다. */
+    @media (max-width : 768px) {
+      header .inner .menu {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 100px;
+        width: 100%;
+        height: var(--nav-height-lg);
+        background-color: skyblue;
+      }
+      header .inner .logo {
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        left: 320px;
+    
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <div class="logo">
+          <i class="fa-solid fa-igloo"></i>
+        </div>
+        <ul class="menu">
+          <li>메뉴1</li>
+          <li>메뉴2</li>
+          <li>메뉴3</li>
+          <li>메뉴4</li>
+        </ul>
+      </div>
+    </header>
+  </body>
+</html>

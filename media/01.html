@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>media query</title>
+</head>
+<body>
+
+  <style>
+    /* 반응형보다 위에 적기 */
+        .all {
+      background-color: red;
+    } 
+    /* all : 모든 경우에 적용 
+      300px 보다 높을때 적용한다.
+    */
+    @media all and (min-width : 300px) {
+      .all {
+        font-size: 2rem;
+        /* 동일한 속성 적용했을때 */
+        background-color: aqua;
+      }
+    }
+
+        /* print : 인쇄 기기와 인쇄 미리보기 */
+        @media print and (min-width : 300px) {
+      .print {
+        font-size: 2rem;
+      }
+    } 
+
+    /* screen : print 이외의 모든 기기에 적용된다. */
+    @media screen and (min-width : 300px) {
+      .screen {
+        font-size : 2rem;
+      }
+    }
+
+    /* 미디어 타입을 작성하지 않은 경우는? */
+    /* 자동으로 screen으로 적용 
+      해상도가 x 값보다 큰 화면에 적용한다.
+    */
+    @media (min-width : 300px) {
+      .no-media {
+        font-size : 2rem;
+      }
+    }
+    /* 가로 해상도가 x값보다 작은 화면에 적용한다. */
+    @media (max-width : 300px) {
+      .no-media {
+        font-size : 2rem;
+      }
+    }
+
+    /* 크기 규칙을 정하지 않은 경우 */
+    @media all {
+      .all {
+        font-size : 2rem;
+      }
+    }
+
+
+  </style>
+
+
+  <div class = "all">all</div>
+  <div class = "print">print</div>
+  <div class = "screen">screen</div>
+  <div class = "no-media">no-media</div>
+
+</body>
+</html>
