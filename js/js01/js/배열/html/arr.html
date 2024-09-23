@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반복문</title>
+  <script>
+
+    // 배열의 중복값 제거하기
+    let arr = [2,4,6,8,100,100,14,1,-1,9,15];
+    // 새로운 배열을 만들어 중복을 제거
+    let unionArr = [];
+    for(let i = 0; i < arr.length; i++) {
+      if(!unionArr.includes(arr[i])) {
+        unionArr.push(arr[i]);
+      }
+    }
+
+    console.log(unionArr);
+
+  </script> 
+</head>
+
+
+
+<body>
+  
+</body>
+</html>
