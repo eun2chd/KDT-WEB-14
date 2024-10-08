@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- div 태그 값 수정 -->
+  <div id = "basicVal">기본값 1</div>
+  <button id = "ba-btn">기본값 바꾸기</button><br>
+  
+  <!-- span 태그 값 수정 -->
+  <span id = "spanVal">값 바꿔보기</span><br>
+  <button id = "span-btn">span 태그 내용 바꾸기 누르면 정수 값도 들어감!! ▽</button><br>
+
+  <!-- input 값 추가해보기 -->
+  <label for="">스크립트로 값 추가해보기</label>
+  <input type="text" disabled>
+
+  <script>
+    const basDiv = document.getElementById('basicVal');
+    const babtn = document.getElementById('ba-btn');
+
+    const basSpan = document.getElementById('spanVal');
+    const baSpbtn = document.getElementById('span-btn');
+
+    const inputVal = document.querySelector('input[type=text]');
+    console.log(inputVal);
+
+    babtn.addEventListener("click", function() {
+      let rand = Math.floor(Math.random() * 10 ) + 1;
+      basDiv.innerHTML = `기본값 ${rand}`;
+    });
+
+    baSpbtn.addEventListener("click", function() {
+      basSpan.innerHTML = '새로운 텍스트로 변경!';
+      inputVal.value = 15;
+    });
+    
+
+
+
+
+  </script>
+
+
+</body>
+</html>

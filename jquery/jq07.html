@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+  <title>Document</title>
+</head>
+<body>
+
+    <style>
+
+      .container {
+        height: 1000px;
+      }
+  
+    </style>
+
+    <div class="container">
+      <input type="text">
+    </div>
+
+ 
+    <button>버튼</button>
+
+
+    <script>
+      // js 로드 이벤튼
+      window.addEventListener("load", function() {
+          $(".container").append("<h1>안녕1</h1>");
+      });
+      $(function() {
+        $('.container').append('<h1>안녕2</h1>');
+      });
+
+      $(window).ready(function () {
+        $('.container').append('<h1>안녕3</h1>');
+
+      });
+
+      // 마우스 이벤트
+      // click :  클릭이 일어났을 때
+      $("button").click(function() {
+        alert("클릭!");
+      });
+
+      // on() = addEventListner() 
+      $("button").on("click", function() {
+        alert("클릭");
+      });
+
+      // mousvoer : 요소 영역에 마우스가 올라가는 순간
+      $("button").mouseover(function() {
+        console.log("mouseover!");
+      });
+      // hover : 요소 영역에 마우스가 올라가 있는 동안
+      $("button").hover(function() {
+        console.log("hoveer!");
+      })
+
+      $(window).scroll( function() {
+        console.log('scroll');
+      });
+
+      $("input").keyup(function(e) { // e : event 어느 곳에서나 사용이 가능하다
+        console.log("keyup");
+        console.log(e.target);
+        console.log(e.key === "Enter");
+
+        console.log("this",this);
+      });
+
+
+    </script>
+
+</body>
+</html>

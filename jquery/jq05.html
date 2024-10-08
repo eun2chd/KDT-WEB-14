@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery 클래스 조작</title>
+    <!-- jQuery ul 쿼리 -->
+    <!-- jQueru CDN 불러오기 기본 -->
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js" integrity="sha256-u0L8aA6Ev3bY2HI4y0CAyr9H8FRWgX4hZ9+K7C2nzdc=" crossorigin="anonymous"></script>
+    
+    
+    <script>
+      function addClass() {
+        $('p').addClass("fs-50");
+      }
+      function removeClass() {
+        $('p').removeClass("fs-50"); // 특정한 클래스 삭제
+        $('p').removeClass(); // 모든 클래스 제거
+      }
+
+      function hasClass() {
+        // 해당 클래스가 있는지검사 true or false 반환
+        if($("p").hasClass("fs-50")) {
+          alert("true!");
+        } else {
+          alert("false!");
+        }
+      }
+
+      // 있으면 삭제 없으면 추가한다.
+      function toggleClass() {
+        $('p').toggleClass("fs-50");
+      }
+
+      function switchClass() {
+        $("p").switchClass("color-blue", "color-pink", 3000);
+      }
+
+
+    </script>
+
+    <style>
+      .color-blue {
+        color: blue;
+      }
+
+      .fs-50 {
+        font-size: 50px;
+      }
+
+      .color-pink {
+        color: pink;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <h2>클래스 조작하기</h2>
+    <p class = "color-blue">안녕하세요!</p>
+    <br>
+
+    <button onclick = "addClass()">클래스 추가</button>
+    <button onclick = "removeClass()">클래스 삭제</button>
+    <button onclick = "hasClass()">클래스 유무 확인</button>
+    <button onclick = "toggleClass()">클래스 토글</button>
+    <button onclick = "switchClass()">Switch Jquery</button>
+
+   </body>
+</html>

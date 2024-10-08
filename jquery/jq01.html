@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <input type="text" id = input1>
+    <span>안녕</span>
+    <button onclick="changeText()">changeText</button>
+    <button onclick="changeText()">changeText</button>
+    <button onclick="changeText()">changeText</button>
+    <br>
+    <p style = "background-color: orange;">p테그</p>
+    <button onclick="changeHTML()">chageHTML</button>
+
+    <script>
+
+        function changeAttribute() {
+
+        }
+
+        function changeText() {
+          // js
+          let span = document.querySelector("span");
+          // js~
+          //span.innerText = "javascript!"
+          $("span").text("jquery~");
+        }
+
+        function changeHTML() {
+
+          //JS
+          let p = document.querySelector("p");
+          //p.innerHTML = "<h1>javascript</h1>"
+          $("p").html("<h1>jQuery~~</h1>");
+
+        }
+    </script>
+  
+</body>
+</html>
